@@ -1,0 +1,55 @@
+<!--- For the addPage.html and login.html pages, they should contain the elements
+shown in Figures 2 and 3, and pressing on the login and add post buttons should
+redirect to the index.html page. [2 point]
+
+/// A user should not be allowed to submit the login form content, if she/he did not
+fill in both fields (e.g., Email and Username). [0.5 point]  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="src/css/login_style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2><a href=index.html class="home_btn">Home</a></h2>
+            <div class="profile">
+                <div class="dropdown" id="profileDropdown">
+                    <p>Bananimus Maximus</p>
+                    <p>bricked@gmail.com</p>
+                    <p onclick="logout()">Logout</p>
+                </div>
+              <a href="#"><img src="img//banana_profile.png" alt="Profile" class="profile-icon"></a>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="post"> 
+                <div class="post-body">
+                    
+                    <p1>Welcome to BananaIt</p1>
+                    <p2>Create an account</p2>
+                    <p3>or</p3>
+                    <p4>Please log in</p4>
+
+                    <form id="form" action="index.html">
+                        <input type="email" placeholder= "Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button id="login_btn">Log In</button>
+                    </form>
+                </div>
+                <div class="forgot_password-button">
+
+                    <p>Forgot password</p>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dropdown.js"></script>
+</body>
+</html>
